@@ -71,7 +71,7 @@ export function createAuthRouter(dao: Dao, queue: Queue) {
       if (!params.token) { // params = {} => the user doesn't exists, let's create it
         params = {
           added_at: Date.now(),
-          lang: 'fr',
+          lang: 'en',
           token: loginResult.accessToken,
           tokenSecret: loginResult.accessSecret,
         };
