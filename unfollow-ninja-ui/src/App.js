@@ -37,7 +37,7 @@ const theme = {
 };
 
 function App() {
-  const isForeigner = !navigator.language?.startsWith?.('fr') && navigator.userAgent !== 'ReactSnap';
+  const isFrench = navigator.language?.startsWith && navigator.language.startsWith('fr') && navigator.userAgent !== 'ReactSnap';
   return (
       <Grommet theme={theme}>
         <Section>
@@ -46,10 +46,10 @@ function App() {
         <Section>
           <Box direction='row' wrap={true} margin={{vertical: 'large'}}>
             <Box basis='medium' flex={true} pad='medium'>
-              <Heading level={1} color='dark'>Soyez prévenus rapidement de vos unfollowers Twitter</Heading>
-              <Paragraph size='large'>Unfollow Ninja vous envoie une notification dès qu'un twitto se désabonne de votre compte, en quelques secondes.</Paragraph>
-              {isForeigner ? <Paragraph margin={{top: 'xsmall'}}>
-                English speaker? An international version is available at <Link href='https://unfollow-monkey.com/?utm_source=unfollowninja'>https://unfollow-monkey.com</Link>
+              <Heading level={1} color='dark'>Get notified when your Twitter account loses a follower</Heading>
+              <Paragraph size='large'>Unfollow Monkey sends you a direct message as soon as a twitter user unfollows you, blocks you, or leave Twitter, within seconds.</Paragraph>
+              {isFrench ? <Paragraph margin={{top: 'xsmall'}}>
+                Francais? Découvrez aussi <Link href='https://unfollow.ninja/?utm_source=unfollowmonkey'>https://unfollow.ninja</Link>
               </Paragraph> : null}
 			  <MiniApp/>
             </Box>
@@ -64,11 +64,11 @@ function App() {
               <Image title='dog playing' fit='contain' src={Images.Dog}/>
             </Box>
             <Box basis='medium' flex={true} pad='medium' >
-              <Heading level={2} color='dark'>UnfollowNinja est libre et gratuit</Heading>
-              <Paragraph>UnfollowNinja est un projet <Link href='https://github.com/PLhery/unfollowNinja'>open-source</Link>, maintenu par <Link href='https://twitter.com/plhery'>@plhery</Link> et hébergé par <Link href='https://twitter.com/hivanenetwork'>HivaneNetwork</Link>.</Paragraph>
-              <Paragraph>Merci à Hivane d'aider le projet à rester performant, libre, et gratuit, soutenant 100 000+ utilisateurs actifs.</Paragraph>
-			  <Paragraph>UnfollowNinja s'appuie sur la librairie node <i>twitter-api-v2</i>, par le même auteur.</Paragraph>
-              <Box gap='small' alignSelf='center' direction='row'>
+              <Heading level={2} color='dark'>Unfollow Monkey is free for everyone</Heading>
+              <Paragraph>Unfollow Monkey is based on the <Link href='https://github.com/PLhery/unfollowNinja'>open-source</Link> project <Link href='https://unfollow.ninja'>unfollowNinja</Link>, hosted by <Link href='https://pulseheberg.com/'>PulseHeberg</Link> and maintained by <Link href='https://twitter.com/plhery'>@plhery</Link>.</Paragraph>
+              <Paragraph>Thanks to PulseHeberg for helping the project to remain substainable, efficient, free, supporting 100 000+ users. They also provide <Link href='https://pulseheberg.com/'>great and affordable servers and web hosting solutions</Link>, if you'd like to have a look!</Paragraph>
+			  <Paragraph>UnfollowMonkey is powered by the <i>twitter-api-v2</i> node library, by the same author.</Paragraph>
+			  <Box gap='small' alignSelf='center' direction='row'>
 				<Repo title='unfollowNinja' description='Get notified when your Twitter account loses a follower.' stars={139} forks={12}/>
 				<Repo title='node-twitter-api-v2' description='Strongly typed, full-featured, light, versatile yet powerful Twitter API v1.1 and v2 client for Node.js.' stars={139} forks={9}/>
               </Box>
@@ -82,9 +82,9 @@ function App() {
           <Box direction='row' align='center' alignSelf='center' gap='small'>
             <Image title='logo' height={30} src={Images.Logo}/>
             <Text size='small' textAlign='center' style={{fontFamily: 'quicksand'}}>
-              © 2020 UnfollowNinja · <Link href='/cgu.pdf'>CGU</Link> ·
-              Découvrez aussi <Link href='https://unfollow-monkey.com/?utm_source=unfollowninja_footer'><Image title='unfollowmonkey' src={Images.UnfollowMonkey} height={18}/></Link> UnfollowMonkey <Link href='https://uzzy.me/?utm_source=unfollowninja'><Image title='uzzy' src={Images.Uzzy} height={18}/></Link> Uzzy et <Link href='https://affinitweet.com/?utm_source=unfollowninja'><Image title='affinitweet' src={Images.Affinitweet} height={18}/></Link> Affinitweet ·
-              Proposé par <Link href='https://twitter.com/plhery'>@plhery</Link> · Disponible sur <Link href='https://github.com/PLhery/unfollowNinja'>GitHub</Link>
+              © 2020 UnfollowMonkey · <Link href='https://www.privacypolicies.com/live/9050f832-39c9-4bec-8eb4-3ddf5ee5cbaa'>TOS</Link> ·
+              Discover also <Link href='https://unfollow.ninja/?utm_source=unfollowmonkey_footer'><Image title='unfollowNinja' height={21} src={Images.UnfollowNinja}/></Link> UnfollowNinja <Link href='https://uzzy.me/en?utm_source=unfollowmonkey'><Image title='uzzy' src={Images.Uzzy} height={18}/></Link> Uzzy and <Link href='https://affinitweet.com/?utm_source=unfollowmonkey'><Image title='affinitweet' src={Images.Affinitweet} height={18}/></Link> Affinitweet ·
+              Made with ♥ by <Link href='https://twitter.com/plhery'>@plhery</Link> · Available on <Link href='https://github.com/PLhery/unfollowNinja'>GitHub</Link>
             </Text>
           </Box>
         </Section>
