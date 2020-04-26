@@ -41,7 +41,7 @@ export async function checkAllFollowers(workerId: number, nbWorkers: number, dao
           }));
 
         await Promise.all(promises);
-        metrics.gauge(`uninja.check-duration.worker.${workerId}`, Date.now() - startedAt);
+        metrics.gauge(`umonkey.check-duration.worker.${workerId}`, Date.now() - startedAt);
     } catch (error) {
         try {
             Sentry.captureException(error);
@@ -79,7 +79,7 @@ export async function checkAllVipFollowers(workerId: number, nbWorkers: number, 
             }
         }
 
-        metrics.gauge(`uninja.check-vip-duration.worker.${workerId}`, Date.now() - startedAt);
+        metrics.gauge(`umonkey.check-vip-duration.worker.${workerId}`, Date.now() - startedAt);
     } catch (error) {
         try {
             Sentry.captureException(error);
