@@ -54,7 +54,7 @@ function App() {
 			  <MiniApp/>
             </Box>
             <Box basis='medium' flex={true} pad='medium'>
-              <Image width='100%' title='Exemple de notification' src={Images.DmScreenshot}/>
+              <Image width='100%' title='Example of notification' src={Images.DmScreenshot}/>
             </Box>
           </Box>
         </Section>
