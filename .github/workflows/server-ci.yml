@@ -10,29 +10,27 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v2
+      - name: setup pnpm
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.20.3
       - name: Use node ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - name: cache npm modules
-        uses: actions/cache@v1
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-      - name: npm ci
+          cache: 'pnpm'
+      - name: pnpm install --frozen-lockfile
         working-directory: unfollow-ninja-server
-        run: npm ci
+        run: pnpm install
       - name: lint
         working-directory: unfollow-ninja-server
-        run: npm run lint
+        run: pnpm lint
       - name: build
         working-directory: unfollow-ninja-server
-        run: npm run build
+        run: pnpm build
       - name: test
         working-directory: unfollow-ninja-server
-        run: npm run specs
+        run: pnpm specs
       - name: Archive test results
         uses: actions/upload-artifact@v1
         with:

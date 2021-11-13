@@ -41,6 +41,7 @@ By default, the db files and logs are stored in /data subfolders. Feel free to e
 
 ## Launch the server manually
 
+- install node 14/16 and pnpm `npm install -g pnpm`
 - clone the repo `git clone git@github.com:PLhery/unfollowNinja.git`
 - `cd unfollowNinja/unfollow-ninja-server`
 - install the dependencies and build the project `npm ci && npm build`
