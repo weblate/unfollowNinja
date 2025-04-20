@@ -1,0 +1,15 @@
+{
+    "This account followed you for {{duration}} ({{{time}}}).": "இந்த கணக்கு {{duration}} ({{{time}}}) க்கு உங்களைப் பின்தொடர்ந்தது.",
+    "{{nbUnfollows}} Twitter users unfollowed you:": "{{nbUnfollows}} twitter ட்விட்டர் பயனர்கள் உங்களைப் பின்தொடரவில்லை:",
+    "one of your followers": "உங்களைப் பின்தொடர்பவர்களில் ஒருவர்",
+    "{{username}} unfollowed you {{emoji}}.": "{{username} you உங்களைப் பின்தொடரவில்லை {{username}}.",
+    "{{username}} has been suspended {{emoji}}.": "{{username}} {{emoji}} இடைநிறுத்தப்பட்டுள்ளது.",
+    "{{username}} has left Twitter {{emoji}}.": "{{username} கீச்சகத்தை விட்டுவிலகினார் {{emoji}}.",
+    "{{username}} blocked you {{emoji}}.": "{{username} you உங்களைத் தடுத்தது {{username}}.",
+    "You blocked {{username}} {{emoji}}.": "நீங்கள் {{username}} {{emoji}} ஐத் தடுத்தீர்கள்.",
+    "This account followed you before you signed up to @{{twitterAccount}}!": "நீங்கள் @{{twitterAccount}}} இல் பதிவுபெறுவதற்கு முன்பு இந்த கணக்கு உங்களைப் பின்தொடர்ந்தது!",
+    "and {{nbLeftovers}} more.": "மற்றும் {{nbLeftovers}}}}}}.",
+    "All set, welcome to @{{twitterAccount}} {{emoji}}!\nYou will soon know all about your unfollowers here!": "எல்லா தொகுப்புகளும், {{{twitterAccount}} {{emoji}}!\n நீங்கள் இங்கே பின்தொடர்வவர்களைப் பற்றி விரைவில் அறிந்து கொள்வீர்கள்!",
+    "{{username}}'s account has been locked {{emoji}}.": "{{username}} இன் கணக்கு பூட்டப்பட்டுள்ளது {{emoji}}.",
+    "Congratulations, can now enjoy @{{twitterAccount}} pro {{emoji}}!": "வாழ்த்துக்கள், இப்போது {{{twitterAccount}} pro {{emoji}} ஐ அனுபவிக்க முடியும்!"
+}
